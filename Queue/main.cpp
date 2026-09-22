@@ -6,9 +6,17 @@
 //
 
 #include <iostream>
+#include "Queue.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return EXIT_SUCCESS;
+int main(int argc, const char * argv[])
+{
+    Queue theQueue(4);
+    
+    theQueue.enqueue(41);
+    theQueue.enqueue(3);
+    theQueue.enqueue(24);
+    theQueue.enqueue(5);
+    
+    theQueue.printQueue();
+    
 }
